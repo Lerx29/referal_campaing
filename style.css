@@ -1,10 +1,12 @@
 body {
   font-family: poppins, sans-serif;
+  text-align: justify;
   margin: 0;
   padding: 0;
   line-height: 1.6;
   background-color: #f8f9fa;
   color: #333;
+
 }
 
 header {
@@ -34,11 +36,19 @@ section {
 }
 
 .profiles {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columnas de igual ancho */
   flex-wrap: wrap;
   gap: 2rem;
-  justify-content: space-between;
+  justify-content: center;
 }
+
+@media (max-width: 980px) {
+  .profiles {
+    grid-template-columns: 1fr; /* Solo una columna en móviles */
+  }
+}
+
 
 .profile {
   background-color: white;
@@ -77,15 +87,18 @@ li {
 }
 
 /* Estilo para botones en fila en pantallas más anchas */
-@media (min-width: 768px) {
+@media (min-width: 980px) {
   .button-container {
+    margin-left: 4rem;
+    margin-right: 4rem;
     display: flex;
     justify-content: center;
     gap: 1rem;
   }
 
   .button {
-    margin: 0;
+    margin-left: 4rem;
+    margin-right: 4rem;
     width: auto;
     flex: 1;
     max-width: none;
@@ -107,7 +120,7 @@ li {
 
 .profile-img {
   width: 100%;
-  max-width: 150px;
+  display: flex;
   border-radius: 12px;
   display: block;
   margin: 0 auto 1rem auto;
@@ -121,4 +134,81 @@ li {
 .centered-heading {
   text-align: center;
   font-size: 1.5rem;
+}
+
+.about-content {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+details summary {
+  font-size: 1.4rem;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: underline;
+  color: #ffffff;
+  padding: 0.5rem;
+}
+
+
+details[open] summary {
+  color: #ffffff;
+  font-style: Bold;
+}
+.collapsible-container {
+  display: flex;
+  margin: 2rem auto;
+  padding: 1rem 1.5rem;
+  background-color: #4b2e83;
+  color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.collapsible-container details {
+  cursor: pointer;
+}
+
+.collapsible-container summary {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.collapsible-container p {
+  text-align: justify;
+  margin-top: 1rem;
+}
+
+.collapsible-container-terms {
+  display: flex;
+  margin: 2rem auto;
+  padding: 1rem 1.5rem;
+  background-color: #d6d6d6; /* Aquí defines el color de fondo */
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.collapsible-container-terms details {
+  cursor: pointer;
+}
+
+.collapsible-container-terms summary {
+  font-weight: bold;
+  color: #333;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.collapsible-container-terms [open] summary {
+  font-weight: bold;
+  color: #333;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.collapsible-container-terms p, 
+.collapsible-container-terms ol {
+  text-align: justify;
+  margin-top: 1rem;
 }
