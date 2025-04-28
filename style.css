@@ -78,7 +78,7 @@ li {
   border-radius: 8px;
   text-decoration: none;
   text-align: center;
-  width: 100%;
+  width: auto;
   margin: 0.5rem auto;
   font-size: 1.8rem;
   font-weight: bold;
