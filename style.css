@@ -89,16 +89,16 @@ li {
 /* Estilo para botones en fila en pantallas más anchas */
 @media (min-width: 980px) {
   .button-container {
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-left: 0.8rem;
+    margin-right: 0.8rem;
     display: flex;
     justify-content: center;
     gap: 1rem;
   }
 
   .button {
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-left: 0.8rem;
+    margin-right: 0.8rem;
     width: auto;
     flex: 1;
     max-width: none;
