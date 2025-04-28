@@ -80,9 +80,10 @@ li {
   text-align: center;
   width: auto;
   margin: 0.5rem auto;
-  font-size: 1.8rem;
+  font-size: 3rem;
   font-weight: bold;
   box-sizing: border-box;
+  justify-content: center;
 }
 
 /* Estilo para botones en fila en pantallas más anchas */
