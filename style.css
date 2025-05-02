@@ -237,14 +237,13 @@ details[open] summary {
   align-items: center;
   text-decoration: none; /* Esto elimina el subrayado */
   color: #4b2e83; /* Color del texto */
-  /*gap: 8px; /* Espacio entre el ícono y el texto */
   padding: 16px;
 }
 
 .follow-text {
   font-size: 16px; /* Tamaño del texto */
   margin-left: 8px; /* Espacio entre el ícono y el texto */
-  color: #3333; /* Color del texto */
+  color: #333; /* Color del texto */
 }
 .social-icon {
   font-size: 36px; /* Ajusta solo el tamaño de los íconos */
