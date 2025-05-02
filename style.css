@@ -217,3 +217,36 @@ details[open] summary {
   text-align: justify;
   margin-top: 16px; /* 1rem */
 }
+
+.footer {
+  padding: 8px;
+  text-align: center;
+  font-size: 16px; /* 1rem */
+  background-color: #f2f2f2;
+  margin-top: 48px;
+}
+
+.footer p {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.social-link {
+  font-size: 24px; /* Tamaño general */
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none; /* Esto elimina el subrayado */
+  color: #4b2e83; /* Color del texto */
+  /*gap: 8px; /* Espacio entre el ícono y el texto */
+  padding: 16px;
+}
+
+.follow-text {
+  font-size: 16px; /* Tamaño del texto */
+  margin-left: 8px; /* Espacio entre el ícono y el texto */
+  color: #333; /* Color del texto */
+}
+.social-icon {
+  font-size: 36px; /* Ajusta solo el tamaño de los íconos */
+  margin-right: 10px; /* Espacio entre el ícono y el texto */
+}
