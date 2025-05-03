@@ -249,3 +249,28 @@ details[open] summary {
   font-size: 36px; /* Ajusta solo el tamaño de los íconos */
   margin-right: 10px; /* Espacio entre el ícono y el texto */
 }
+
+.about-flex {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  flex-direction: row;
+}
+
+.about-image {
+  max-width: 300px;
+  height: auto;
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .about-flex {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-image {
+    max-width: 90%;
+  }
+}
