@@ -209,7 +209,7 @@ details[open] summary {
 .collapsible-container-terms p, 
 .collapsible-container-terms ol{
   text-align: justify;
-  padding left: 32px; /* 1rem */
+  padding-left: 32px; /* 1rem */
   padding-right: 32px; /* 1rem */
 }
 .footer {
