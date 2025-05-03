@@ -91,15 +91,8 @@ li {
 
 @media (max-width: 768px) {
   .button {
-    font-size: 20px; /* 1.25rem */
-    padding: 8; /* 0.75rem 1.5rem */
-  }
-}
-
-@media (min-width: 769px) {
-  .button {
-    font-size: 24px; /* 1.5rem */
-    padding: 16px 32px; /* 1rem 2rem */
+    font-size: 16px; /* 1.25rem */
+    padding: 8px; /* 0.75rem 1.5rem */
   }
 }
 
@@ -142,7 +135,7 @@ li {
 }
 
 .about-content {
-  padding-bottom: 16px; /* 1rem */
+  padding-bottom: 0px; /* 1rem */
 }
 
 @media (max-width: 768px) {
@@ -183,7 +176,7 @@ details[open] summary {
 
 .collapsible-container summary {
   font-weight: bold;
-  font-size: 24px; /* 1.5rem */
+  font-size: 20px; /* 1.5rem */
 }
 
 .collapsible-container p {
@@ -204,22 +197,21 @@ details[open] summary {
 .collapsible-container-terms summary {
   font-weight: bold;
   color: #333;
-  font-size: 24px; /* 1.5rem */
+  font-size: 20px; /* 1.5rem */
 }
 
 .collapsible-container-terms [open] summary {
   font-weight: bold;
   color: #333;
-  font-size: 24px; /* 1.5rem */
+  font-size: 20px; /* 1.5rem */
 }
 
 .collapsible-container-terms p, 
-.collapsible-container-terms ol,
-.collapsible-container-terms li, {
+.collapsible-container-terms ol{
   text-align: justify;
-  padding: 16px; /* 1rem */
+  padding left: 32px; /* 1rem */
+  padding-right: 32px; /* 1rem */
 }
-
 .footer {
   padding: 8px;
   text-align: center;
@@ -257,13 +249,15 @@ details[open] summary {
   gap: 16px;
   align-items: flex-start;
   flex-direction: row;
+  padding: 24px; /* 1rem */
 }
 
 .about-image {
-  max-width: 320px;
+  max-width: 330px;
   height: auto;
   flex-shrink: 0;
   align-items: center;
+  border-radius: 10px;
 }
 
 @media (max-width: 600px) {
@@ -271,6 +265,8 @@ details[open] summary {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    padding: 16px; /* 1rem */
+
   }
 
   .about-image {
@@ -278,3 +274,4 @@ details[open] summary {
     align-items: center;    
   }
 }
+
